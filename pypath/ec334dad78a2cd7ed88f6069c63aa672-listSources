@@ -1,0 +1,1756 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN/" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="eng"><!-- InstanceBegin template="/Templates/new_template_leftmenu_max.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+
+        
+<!-- A list of js and css files required for wrapper -->
+
+<!-- New. Added Aug 2014 for escaping regex chracaters in drop down column filters of datatables -->
+<!-- <script type="text/javascript" charset="utf-8" src="https://www.ebi.ac.uk/unichem/legacy/static/XRegExp.js"></script>  -->
+<!-- Above in development -->
+
+<script type="text/javascript" charset="utf-8" src="https://www.ebi.ac.uk/unichem/legacy/static/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.ebi.ac.uk/unichem/legacy/static/jquery.dataTables.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.ebi.ac.uk/unichem/legacy/static/jquery-ui-1.8.23.custom.min.js"></script>
+
+<script type="text/javascript" charset="utf-8" src="https://www.ebi.ac.uk/unichem/legacy/static/formVal.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.ebi.ac.uk/unichem/legacy/static/formReveal.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.ebi.ac.uk/unichem/legacy/static/dataTablesHeatmap.js"></script>
+
+
+<style type="text/css" title="currentStyle">
+    @import url("https://www.ebi.ac.uk/unichem/legacy/static/jquery-ui-1.8.23.custom.css");
+    @import url("https://www.ebi.ac.uk/unichem/legacy/static/jquery.dataTables_themeroller.css");
+    @import url("https://www.ebi.ac.uk/unichem/legacy/static/css/frontForm.css");
+</style>
+
+<script type="text/javascript" charset="utf-8" src="https://www.ebi.ac.uk/unichem/legacy/static/tableFormats.js"></script>
+
+<script type="text/javascript" charset="utf-8" src="https://www.ebi.ac.uk/unichem/legacy/static/easyzoom.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.ebi.ac.uk/unichem/legacy/static/jquery.tools.min.js"></script>
+
+
+<!-- New. To be Added Jan 2013 for connectivity images -->
+<script type="text/javascript" charset="utf-8" src="https://www.ebi.ac.uk/unichem/legacy/static/raphael-min.js"></script> 
+<!-- <script type="text/javascript" charset="utf-8" src="https://www.ebi.ac.uk/unichem/legacy/static/jonTest.js"></script> -->
+
+<!-- New. To be Added Sep 2016 for plots -->
+<script type="text/javascript" charset="utf-8" src="https://cdn.plot.ly/plotly-latest.min.js"></script
+
+
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="EBI Web Team" />
+<meta http-equiv="Content-Language" content="en-GB" />
+<meta http-equiv="Window-target" content="_top" />
+<meta name="no-email-collection" content="http://www.unspam.com/noemailcollection/" />
+<meta name="generator" content="Dreamweaver 8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>UniChem</title>
+<!-- InstanceEndEditable -->
+<link rel="stylesheet"  href="https://www.ebi.ac.uk/inc/css/contents.css"     type="text/css" />
+<!-- - - - - - - - - -  -->
+<link rel="stylesheet" href="https://www.ebi.ac.uk/unichem/legacy/static/css/userstyles.css" type="text/css" />
+<link rel="stylesheet" href="https://www.ebi.ac.uk/unichem/legacy/static/css/basicstyles.css" type="text/css" />
+<!-- - - - - - - - - -  -->
+<script src="https://www.ebi.ac.uk/inc/js/contents.js" type="text/javascript"></script>
+<!-- - - - - - - - - -  -->
+<link rel="stylesheet" href="https://www.ebi.ac.uk/unichem/legacy/static/css/sidebars.css" type="text/css" />
+<!-- - - - - - - - - -  -->
+<!-- For 'new' EBI site... = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  -->
+<link type="text/css" rel="stylesheet" href="//www.ebi.ac.uk/web_guidelines/css/mitigation/develop/ebi-mitigation.css"/>
+<link type="text/css" rel="stylesheet" href="//www.ebi.ac.uk/web_guidelines/css/mitigation/develop/embl-petrol-colours.css"/>
+<script defer src="//www.ebi.ac.uk/web_guidelines/js/cookiebanner.js"></script>
+<script defer src="//www.ebi.ac.uk/web_guidelines/js/foot.js"></script>
+<!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  -->
+
+<style type="text/css">
+@media print {
+	body, .contents, .header, .contentsarea, .head {
+		position: relative;
+	}
+}
+</style>
+
+<!-- InstanceBeginEditable name="head" -->
+<!--  start meta tags, css , javascript here   -->
+<!--  end meta tags, css , javascript here  -->
+<!-- InstanceEndEditable -->
+<link rel="icon" href="https://www.ebi.ac.uk/unichem/legacy/static/images/favicon3.ico" type="image/x-icon" />
+</head>
+<body onload="if(navigator.userAgent.indexOf('MSIE') != -1) {document.getElementById('head').allowTransparency = true;}">
+
+<!-- For 'new' EBI site... = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  -->
+<div class="headerdiv" id="headerdiv">
+ <div class="header">
+   <div id="global-masthead" class="masthead grid_24">
+     <!-- <p>EMBL-EBI</p> -->
+     <p id="logo">
+       <!--This has to be one line and no newline characters-->
+       <a href="/" title="Go to the EMBL-EBI homepage"><img src="//www.ebi.ac.uk/web_guidelines/images/logos/EMBL-EBI/logo.png" alt="European Bioinformatics Institute"/></a>
+     </p>
+
+     <div class="nav">
+       <ul id="global-nav">
+         <li class="first" id="services">
+           <a href="/services" title="">Services</a>
+         </li>
+         <li id="research">
+           <a href="/research" title="">Research</a>
+         </li>
+         <li id="training">
+           <a href="/training" title="">Training</a>
+         </li>
+         <li id="industry">
+           <a href="/industry" title="">Industry</a>
+         </li>
+         <li id="about" class="last">
+           <a href="/about" title="">About us</a>
+         </li>
+       </ul>
+     </div>
+   </div>
+
+<!-- These two divs -->
+   </div>  
+   </div>  
+
+
+ <div id="side0" class="linearBg1" style="height:125px;width:100%"> 
+<!-- <div class="linearBg1"> -->
+
+<!-- <table width="100%" height="90">  -->
+<table style="float:left;width:100%">  
+<tbody>
+<tr>
+<td width="10"></td>  
+<td width="85">
+<!-- <div id="side1" style="height:80px;width:85px;float:left">   -->
+
+<!--  <a href="https://www.ebi.ac.uk/unichem/legacy/" title="Go to UniChem homepage"><img class="noBord" src="https://www.ebi.ac.uk/unichem/legacy/static/images/UniChem_logo_webicon.png" width="64px" height="64px" alt="UNICHEM"/></a>   -->
+<a href="https://www.ebi.ac.uk/unichem/legacy/" title="Go to UniChem homepage"><img class="noBord" src="https://www.ebi.ac.uk/unichem/legacy/static/images/UniChem_logo2_255.png" width="74px" height="74px" alt="UNICHEM"/></a> 
+<!-- </div>  -->
+</td>
+<td width="2"></td>
+<td width="50">
+ <div class="uc_head"> 
+<!-- <font size="7" color="white" text-shadow: 2px 2px 2px #000;>UniChem</font></td>   -->
+UniChem
+</div>
+</td>  
+<td></td>
+<td>
+<!-- This useful if white background logos are used here... -->
+<!-- <div id="side2" style="height:90px;width:380px;float:right;background-color:white"></div>   --> 
+<div id="side2" style="height:90px;width:380px;float:right"></div> 
+</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+
+<!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  -->
+	<div class="contents" id="contents">
+
+<table class="contentspane" id="contentspane" summary="The main content pane of the page"  style="width: 100%"><tr><td class="leftmargin"><img src="https://www.ebi.ac.uk/inc/images/spacer.gif" class="spacer" alt="spacer" /></td><td class="leftmenucell" id="leftmenucell">
+	  <div class="leftmenu" id="leftmenu" style="width: 145px; visibility: visible; display: block;">
+		  <!-- InstanceBeginEditable name="leftnav" -->
+		  <!-- start left menu here  -->
+
+        <ul id="sidemenuid" class="sidemenu">
+
+<!-- Note: class clickmeopen for li forces menu to be open by default -->
+
+    <li><a href="https://www.ebi.ac.uk/unichem/legacy/" title="UniChem Home Page">Home / Search</a></li>
+    <li><a href="https://chembl.gitbook.io/unichem/webservices">Web Services</a></li>
+    <li><a href="https://www.ebi.ac.uk/unichem/legacy/widesearch/widesearch">Connectivity Search</a></li>
+    <li><a href="https://www.ebi.ac.uk/unichem/legacy/ucquery/listSources">Sources</a>  </li>
+
+
+    <li class="clickmeopen"><i>General Info...</i>
+        <ul>
+            <li><a href="https://www.ebi.ac.uk/unichem/legacy/info/general">Background</a></li>
+            <li><a href="https://www.ebi.ac.uk/unichem/legacy/info/gettingintouch">Getting in touch</a></li>
+            <li><a href="https://www.ebi.ac.uk/unichem/legacy/info/faq">FAQ</a></li>
+<!--            <li><a href="ftp://ftp.ebi.ac.uk/pub/databases/chembl/UniChem/">Downloads</a></li>  -->
+            <li><a href="https://www.ebi.ac.uk/unichem/legacy/info/downloads">Downloads</a></li> 
+            <li><a href="https://www.ebi.ac.uk/unichem/legacy/info/widesearchInfo">Connectivity Info</a></li>
+<!--            <li><a href="https://www.ebi.ac.uk/unichem/legacy/ucquery/stats">Stats</a></li>  -->
+            <li><i>Other</i>
+                 <ul>
+                    <li><a href="https://www.ebi.ac.uk/unichem/legacy/info/rulesforloading">Rules for Loading</a></li>
+                    <li><a href="https://www.ebi.ac.uk/unichem/legacy/info/citation">Citing UniChem</a></li>
+                    <li><a href="https://www.ebi.ac.uk/unichem/legacy/info/submit">Submitting data</a></li>
+                    <li><a href="https://www.ebi.ac.uk/unichem/legacy/widesearch/connectivityLabels">Connectivity Labels</a></li>
+                    <li><a href="https://www.ebi.ac.uk/unichem/legacy/wholesourcemap">Whole source mapping</a></li>
+                    <li><a href="https://www.ebi.ac.uk/unichem/legacy/auxiliary/auxiliary">Auxiliary data mapping</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </li>
+
+
+<!-- Note: class clickmeopen for li forces menu to be open by default -->
+
+
+<li class="clickmeopen"><a href="https://www.ebi.ac.uk/unichem/legacy/analysis">Analysis.</a>
+  <ul>
+    <li><a href="https://www.ebi.ac.uk/unichem/legacy/ucquery/stats">Top Level Stats</a></li>
+    <li><a href="https://www.ebi.ac.uk/unichem/legacy/analysis/unique">Structures by Source</a></li>
+    <li class="clickmeopen"><i>Overlaps...</i>
+      <ul>
+        <li><a href="https://www.ebi.ac.uk/unichem/legacy/analysis/heatoverFullInchi">FULIK</a></li>
+        <li><a href="https://www.ebi.ac.uk/unichem/legacy/analysis/heatoverConnectivity">FIKHB</a></li>
+        <li><a href="https://www.ebi.ac.uk/unichem/legacy/analysis/heatoverConnectSing">SCFIB</a></li>
+      </ul>
+    </li>
+  </ul>
+</li>
+
+
+
+
+
+
+
+
+</ul>
+
+
+
+
+
+        <!-- end left menu here -->
+
+		  <!-- InstanceEndEditable -->
+		<!-- InstanceBeginEditable name="lefticons" -->
+		<!-- InstanceEndEditable -->
+	    <script type="text/javascript" src="https://www.ebi.ac.uk/inc/js/sidebars.js"></script><img src="https://www.ebi.ac.uk/inc/images/spacer.gif" class="spacer" alt="spacer" /></div></td><td class="contentsarea" id="contentsarea">
+		<!-- InstanceBeginEditable name="contents" -->
+		<!-- start contents here -->
+
+<table style="width: 100%">
+<tr>
+<td width="400">
+                <div class="breadcrumbs">
+                <a href="http://www.ebi.ac.uk/" class="firstbreadcrumb">EBI</a>
+                <a href="http://www.ebi.ac.uk/Databases/">Databases</a>
+                <a href="http://www.ebi.ac.uk/Databases/smallmolecules.html">Small Molecules</a>
+                <a href="https://www.ebi.ac.uk/unichem/legacy/" title="UniChem Home Page">UniChem</a>
+
+                </div>
+</td>
+<td width="300" font size="7">
+<font size="3" ><b></b></font>
+</td>
+<td></td>
+</tr>
+</table>
+
+                
+<h2>
+Data Sources.
+</h2>
+
+
+
+<p>
+UniChem currently contains data from the sources listed below. Follow the links on the short names for more detailed information on each source...
+</p>
+
+<br />
+
+<table id="table_id_sources" class="display">
+<thead>
+  <tr>
+  
+    
+    
+    <th>src_id</th>
+  
+    
+    
+    <th>Short name</th>
+  
+    
+    
+    <th>Full name</th>
+  
+    
+    
+    <th>Description</th>
+  
+    
+    
+    <th>Process of Data Acquisition</th>
+    </tr>
+</thead>
+  <tfoot>
+    <tr>
+  
+    
+    
+    <th>src_id</th>
+  
+    
+    
+    <th>Short name</th>
+  
+    
+    
+    <th>Full name</th>
+  
+    
+    
+    <th>Description</th>
+  
+    
+    
+    <th>Process of Data Acquisition</th>
+      </tr>
+  </tfoot>
+
+
+<tbody>
+  
+    <tr>
+    
+    
+    
+
+	
+		
+		
+		<td>1</td>
+	
+    
+
+	
+		
+		<td><a href=" https://www.ebi.ac.uk/unichem/legacy/ucquery/sourceDetails/1  "> chembl </a></td>
+	
+    
+
+	
+                <td>ChEMBL</td>
+	
+    
+
+	
+                <td>A database of bioactive drug-like small molecules and bioactivities abstracted from the scientific literature.</td>
+	
+    
+
+	
+                <td>Standard InChIs and Keys provided on ftp site for each release.</td>
+	
+        </tr>
+  
+    <tr>
+    
+    
+    
+
+	
+		
+		
+		<td>2</td>
+	
+    
+
+	
+		
+		<td><a href=" https://www.ebi.ac.uk/unichem/legacy/ucquery/sourceDetails/2  "> drugbank </a></td>
+	
+    
+
+	
+                <td>DrugBank</td>
+	
+    
+
+	
+                <td>A database that combines drug (i.e. chemical, pharmacological and pharmaceutical) data with drug target (i.e. sequence, structure, and pathway) information.</td>
+	
+    
+
+	
+                <td>Standard InChIs and Keys provided within sd file on ftp site for each release.</td>
+	
+        </tr>
+  
+    <tr>
+    
+    
+    
+
+	
+		
+		
+		<td>3</td>
+	
+    
+
+	
+		
+		<td><a href=" https://www.ebi.ac.uk/unichem/legacy/ucquery/sourceDetails/3  "> pdb </a></td>
+	
+    
+
+	
+                <td>PDBe (Protein Data Bank Europe)</td>
+	
+    
+
+	
+                <td>The European resource for the collection, organisation and dissemination of data on biological macromolecular structures, including structures of small molecule ligands for proteins.</td>
+	
+    
+
+	
+                <td>Standard InChIs and Keys provided by direct querying of Oracle DB.</td>
+	
+        </tr>
+  
+    <tr>
+    
+    
+    
+
+	
+		
+		
+		<td>4</td>
+	
+    
+
+	
+		
+		<td><a href=" https://www.ebi.ac.uk/unichem/legacy/ucquery/sourceDetails/4  "> gtopdb </a></td>
+	
+    
+
+	
+                <td>Guide to Pharmacology</td>
+	
+    
+
+	
+                <td>The IUPHAR (International Union of Basic and Clinical Pharmacology)/BPS (British Pharmacological Society) Guide to PHARMACOLOGY database contains structures of small molecule ligands, peptides and antibodies, with their affinities at protein targets.</td>
+	
+    
+
+	
+                <td>Standard InChIs and Keys available for download at http://www.guidetopharmacology.org/download.jsp</td>
+	
+        </tr>
+  
+    <tr>
+    
+    
+    
+
+	
+		
+		
+		<td>5</td>
+	
+    
+
+	
+		
+		<td><a href=" https://www.ebi.ac.uk/unichem/legacy/ucquery/sourceDetails/5  "> pubchem_dotf </a></td>
+	
+    
+
+	
+                <td>PubChem ('Drugs of the Future' subset)</td>
+	
+    
+
+	
+                <td>A subset of the PubChem DB: from the original depositor 'drugs of the future' (Prous).</td>
+	
+    
+
+	
+                <td>Mol files for SIDs downloaded manually, via PubChem interface, and Standard InChIs and Keys generated by InChI software. SIDs used as identifiers.</td>
+	
+        </tr>
+  
+    <tr>
+    
+    
+    
+
+	
+		
+		
+		<td>6</td>
+	
+    
+
+	
+		
+		<td><a href=" https://www.ebi.ac.uk/unichem/legacy/ucquery/sourceDetails/6  "> kegg_ligand </a></td>
+	
+    
+
+	
+                <td>KEGG (Kyoto Encyclopedia of Genes and Genomes) Ligand</td>
+	
+    
+
+	
+                <td>KEGG LIGAND is a composite DB consisting of COMPOUND, GLYCAN, REACTION, RPAIR, RCLASS, and ENZYME DBs, whose entries are identified by C, G, R, RP, RC, and EC numbers, respectively.</td>
+	
+    
+
+	
+                <td>Mol files were downloaded manually prior to this download becoming private. Standard InChIs and Keys generated by InChI software.</td>
+	
+        </tr>
+  
+    <tr>
+    
+    
+    
+
+	
+		
+		
+		<td>7</td>
+	
+    
+
+	
+		
+		<td><a href=" https://www.ebi.ac.uk/unichem/legacy/ucquery/sourceDetails/7  "> chebi </a></td>
+	
+    
+
+	
+                <td>ChEBI (Chemical Entities of Biological Interest).</td>
+	
+    
+
+	
+                <td>ChEBI is a freely available dictionary of molecular entities focused on 'small' chemical compounds</td>
+	
+    
+
+	
+                <td>Std InChis (but no keys) provided on ftp site. Keys generated by UniChem. 'all star' compounds downloaded</td>
+	
+        </tr>
+  
+    <tr>
+    
+    
+    
+
+	
+		
+		
+		<td>8</td>
+	
+    
+
+	
+		
+		<td><a href=" https://www.ebi.ac.uk/unichem/legacy/ucquery/sourceDetails/8  "> nih_ncc </a></td>
+	
+    
+
+	
+                <td>NIH Clinical Collection</td>
+	
+    
+
+	
+                <td>Collections of plated arrays of small molecules that have a history of use in human clinical trials. Assembled by the National Institutes of Health (NIH) through the Molecular Libraries Roadmap Initiative</td>
+	
+    
+
+	
+                <td>Mol files downloaded manually and Standard InChIs and Keys generated by InChI software</td>
+	
+        </tr>
+  
+    <tr>
+    
+    
+    
+
+	
+		
+		
+		<td>9</td>
+	
+    
+
+	
+		
+		<td><a href=" https://www.ebi.ac.uk/unichem/legacy/ucquery/sourceDetails/9  "> zinc </a></td>
+	
+    
+
+	
+                <td>ZINC</td>
+	
+    
+
+	
+                <td>A free database of commercially-available compounds for virtual screening, provided by the Shoichet Laboratory in the Department of Pharmaceutical Chemistry at the University of California, San Francisco (UCSF).  [Irwin and Shoichet, J. Chem. Inf. Model. 2005;45(1):177-82]</td>
+	
+    
+
+	
+                <td>novirtual subset of ZINC15, as a file containing inchis and keys from http://files.docking.org/export/unichem/</td>
+	
+        </tr>
+  
+    <tr>
+    
+    
+    
+
+	
+		
+		
+		<td>10</td>
+	
+    
+
+	
+		
+		<td><a href=" https://www.ebi.ac.uk/unichem/legacy/ucquery/sourceDetails/10  "> emolecules </a></td>
+	
+    
+
+	
+                <td>eMolecules</td>
+	
+    
+
+	
+                <td>A free chemical structure search engine containing millions of public domain structures. Pricing, availabilities, and vendor information requires an eMolecules Plus subscription.</td>
+	
+    
+
+	
+                <td>Downloaded as an SD file from source, Converted to InChI and INChIKeys by UniChem</td>
+	
+        </tr>
+  
+    <tr>
+    
+    
+    
+
+	
+		
+		
+		<td>12</td>
+	
+    
+
+	
+		
+		<td><a href=" https://www.ebi.ac.uk/unichem/legacy/ucquery/sourceDetails/12  "> atlas </a></td>
+	
+    
+
+	
+                <td>Gene Expression Atlas</td>
+	
+    
+
+	
+                <td>The Gene Expression Atlas is a semantically enriched database of meta-analysis based summary statistics over a curated subset of ArrayExpress Archive, servicing queries for condition-specific gene expression patterns as well as broader exploratory searches for biologically interesting genes/samples.</td>
+	
+    
+
+	
+                <td>Currently extracted from compound names.</td>
+	
+        </tr>
+  
+    <tr>
+    
+    
+    
+
+	
+		
+		
+		<td>14</td>
+	
+    
+
+	
+		
+		<td><a href=" https://www.ebi.ac.uk/unichem/legacy/ucquery/sourceDetails/14  "> fdasrs </a></td>
+	
+    
+
+	
+                <td>FDA/USP Substance Registration System (SRS)</td>
+	
+    
+
+	
+                <td>The primary goal of the FDA/USP Substance Registration System (SRS) is to unambiguously define all substances present in regulated products. Once a substance has been defined, the SRS assigns a strong identifier that is permanently associated with the substance: a UNII (Unique Ingredient Identifier). This is a a non-proprietary, free, unique, unambiguous, nonsemantic, alphanumeric identifier based on a substances molecular structure and/or descriptive information.</td>
+	
+    
+
+	
+                <td>Download of InChIKeys in file UNII Data  from http://fdasis.nlm.nih.gov/srs/jsp/srs/uniiListDownload.jsp</td>
+	
+        </tr>
+  
+    <tr>
+    
+    
+    
+
+	
+		
+		
+		<td>15</td>
+	
+    
+
+	
+		
+		<td><a href=" https://www.ebi.ac.uk/unichem/legacy/ucquery/sourceDetails/15  "> surechembl </a></td>
+	
+    
+
+	
+                <td>SureChEMBL</td>
+	
+    
+
+	
+                <td>SureChEMBL automatically extracts chemistry from the full text of all major patent authorities. Compounds are derived from either chemical names found in text or in chemical depictions. All SureChEMBL compounds are included, except those failing UniChem loading rules.</td>
+	
+    
+
+	
+                <td>Standard InChIs and InChIKeys provided by a direct feed from the SureChEMBL database</td>
+	
+        </tr>
+  
+    <tr>
+    
+    
+    
+
+	
+		
+		
+		<td>17</td>
+	
+    
+
+	
+		
+		<td><a href=" https://www.ebi.ac.uk/unichem/legacy/ucquery/sourceDetails/17  "> pharmgkb </a></td>
+	
+    
+
+	
+                <td>PharmGKB</td>
+	
+    
+
+	
+                <td>PharmGKB (Pharmacogenomics Knowledgebase) is a comprehensive resource that curates knowledge about the impact of genetic variation on drug response for clinicians and researchers.</td>
+	
+    
+
+	
+                <td>drugs.zip file from from download site https://www.pharmgkb.org/downloads/. Smiles contained in this file Converted to Std InChIs internally</td>
+	
+        </tr>
+  
+    <tr>
+    
+    
+    
+
+	
+		
+		
+		<td>18</td>
+	
+    
+
+	
+		
+		<td><a href=" https://www.ebi.ac.uk/unichem/legacy/ucquery/sourceDetails/18  "> hmdb </a></td>
+	
+    
+
+	
+                <td>Human Metabolome Database (HMDB)</td>
+	
+    
+
+	
+                <td>The Human Metabolome Database (HMDB) is a freely available electronic database containing detailed information about small molecule metabolites found in the human body. It is intended to be used for applications in metabolomics, clinical chemistry, biomarker discovery and general education. The database is designed to contain or link three kinds of data: 1) chemical data, 2) clinical data, and 3) molecular biology/biochemistry data</td>
+	
+    
+
+	
+                <td>SD file download from source, converted to InChIs within UniChem</td>
+	
+        </tr>
+  
+    <tr>
+    
+    
+    
+
+	
+		
+		
+		<td>20</td>
+	
+    
+
+	
+		
+		<td><a href=" https://www.ebi.ac.uk/unichem/legacy/ucquery/sourceDetails/20  "> selleck </a></td>
+	
+    
+
+	
+                <td>Selleck</td>
+	
+    
+
+	
+                <td>Selleck Chemicals is a supplier of biochemical products, including over 1,000 inhibitor products</td>
+	
+    
+
+	
+                <td>SD file provided by email. InChIs generated by UniChem</td>
+	
+        </tr>
+  
+    <tr>
+    
+    
+    
+
+	
+		
+		
+		<td>21</td>
+	
+    
+
+	
+		
+		<td><a href=" https://www.ebi.ac.uk/unichem/legacy/ucquery/sourceDetails/21  "> pubchem_tpharma </a></td>
+	
+    
+
+	
+                <td>PubChem ('Thomson Pharma' subset)</td>
+	
+    
+
+	
+                <td>A subset of the PubChem DB: from the original depositor 'Thomson Pharma'.</td>
+	
+    
+
+	
+                <td>Mol files for SIDs downloaded manually, via PubChem interface, and Standard InChIs and Keys generated by InChI software. SIDs used as identifiers.</td>
+	
+        </tr>
+  
+    <tr>
+    
+    
+    
+
+	
+		
+		
+		<td>22</td>
+	
+    
+
+	
+		
+		<td><a href=" https://www.ebi.ac.uk/unichem/legacy/ucquery/sourceDetails/22  "> pubchem </a></td>
+	
+    
+
+	
+                <td>PubChem Compounds</td>
+	
+    
+
+	
+                <td>A database of normalized PubChem compounds (CIDs) from the PubChem Database.</td>
+	
+    
+
+	
+                <td>Standard InChIs and Keys provided on ftp site.</td>
+	
+        </tr>
+  
+    <tr>
+    
+    
+    
+
+	
+		
+		
+		<td>23</td>
+	
+    
+
+	
+		
+		<td><a href=" https://www.ebi.ac.uk/unichem/legacy/ucquery/sourceDetails/23  "> mcule </a></td>
+	
+    
+
+	
+                <td>Mcule</td>
+	
+    
+
+	
+                <td>An online drug discovery platform with virtual screening and molecular modelling services.</td>
+	
+    
+
+	
+                <td>Standard InChIs and Keys provided by email.</td>
+	
+        </tr>
+  
+    <tr>
+    
+    
+    
+
+	
+		
+		
+		<td>24</td>
+	
+    
+
+	
+		
+		<td><a href=" https://www.ebi.ac.uk/unichem/legacy/ucquery/sourceDetails/24  "> nmrshiftdb2 </a></td>
+	
+    
+
+	
+                <td>NMRShiftDB</td>
+	
+    
+
+	
+                <td>An NMR database (web database) for organic structures and their nuclear magnetic resonance (nmr) spectra. It allows for spectrum prediction (13C, 1H and other nuclei) as well as for searching spectra, structures and other properties. Last not least, it features peer-reviewed submission of datasets by its users.</td>
+	
+    
+
+	
+                <td>Standard InChI and Keys available for download at http://nmrshiftdb.nmr.uni-koeln.de/nmrshiftdb2unichem.txt</td>
+	
+        </tr>
+  
+    <tr>
+    
+    
+    
+
+	
+		
+		
+		<td>25</td>
+	
+    
+
+	
+		
+		<td><a href=" https://www.ebi.ac.uk/unichem/legacy/ucquery/sourceDetails/25  "> lincs </a></td>
+	
+    
+
+	
+                <td>Library of Integrated Network-based Cellular Signatures</td>
+	
+    
+
+	
+                <td>The LINCS DCIC facilitates and standardized the information relevant to LINCS assays as described in http://www.lincsproject.org/data/data-standards/</td>
+	
+    
+
+	
+                <td>Standard InChIs and Keys downloadable fromhttp://lincs-dcic.org/metadata/SmallMolecules</td>
+	
+        </tr>
+  
+    <tr>
+    
+    
+    
+
+	
+		
+		
+		<td>26</td>
+	
+    
+
+	
+		
+		<td><a href=" https://www.ebi.ac.uk/unichem/legacy/ucquery/sourceDetails/26  "> actor </a></td>
+	
+    
+
+	
+                <td>ACToR</td>
+	
+    
+
+	
+                <td>ACToR (Aggregated Computational Toxicology Resource)</td>
+	
+    
+
+	
+                <td>Standard InChIs and Keys generated from SMILES from DB download</td>
+	
+        </tr>
+  
+    <tr>
+    
+    
+    
+
+	
+		
+		
+		<td>27</td>
+	
+    
+
+	
+		
+		<td><a href=" https://www.ebi.ac.uk/unichem/legacy/ucquery/sourceDetails/27  "> recon </a></td>
+	
+    
+
+	
+                <td>Recon</td>
+	
+    
+
+	
+                <td>A biochemical knowledge-base on human metabolism</td>
+	
+    
+
+	
+                <td>Standard InChIs and Keys provided by email</td>
+	
+        </tr>
+  
+    <tr>
+    
+    
+    
+
+	
+		
+		
+		<td>28</td>
+	
+    
+
+	
+		
+		<td><a href=" https://www.ebi.ac.uk/unichem/legacy/ucquery/sourceDetails/28  "> molport </a></td>
+	
+    
+
+	
+                <td>MolPort</td>
+	
+    
+
+	
+                <td>MolPort. A database designed to assist users find commercial sources of compounds. Access requires (free) registration. Only stock compounds included from Nov 2017.</td>
+	
+    
+
+	
+                <td>Standard InChIs and Keys provided on from MolPort ftp site, access on request.</td>
+	
+        </tr>
+  
+    <tr>
+    
+    
+    
+
+	
+		
+		
+		<td>29</td>
+	
+    
+
+	
+		
+		<td><a href=" https://www.ebi.ac.uk/unichem/legacy/ucquery/sourceDetails/29  "> nikkaji </a></td>
+	
+    
+
+	
+                <td>Nikkaji</td>
+	
+    
+
+	
+                <td> Nakkaji (The Japan Chemical Substance Dictionary) is an organic compound dictionary database prepared by the Japan Science and Technology Agency (JST).</td>
+	
+    
+
+	
+                <td>Standard InChIs and Keys available from ftp site</td>
+	
+        </tr>
+  
+    <tr>
+    
+    
+    
+
+	
+		
+		
+		<td>31</td>
+	
+    
+
+	
+		
+		<td><a href=" https://www.ebi.ac.uk/unichem/legacy/ucquery/sourceDetails/31  "> bindingdb </a></td>
+	
+    
+
+	
+                <td>BindingDB</td>
+	
+    
+
+	
+                <td>A public, web-accessible database of measured binding affinities, focusing chiefly on the interactions of proteins considered to be drug-targets with small, drug-like molecules</td>
+	
+    
+
+	
+                <td>Standard InChIs and Keys available within a tsv file from download page.</td>
+	
+        </tr>
+  
+    <tr>
+    
+    
+    
+
+	
+		
+		
+		<td>32</td>
+	
+    
+
+	
+		
+		<td><a href=" https://www.ebi.ac.uk/unichem/legacy/ucquery/sourceDetails/32  "> comptox </a></td>
+	
+    
+
+	
+                <td>EPA (Environmental Protection Agency) CompTox Dashboard</td>
+	
+    
+
+	
+                <td>The foundation of chemical safety testing relies on chemistry information such as high-quality chemical structures and physicochemical properties. This information is used by scientists to predict the potential health risks of chemicals.The CompTox Dashboard is part of a suite of dashboards developed by EPA to help evaluate the safety of chemicals. It provides access to a variety of data and information on over 700,000 chemicals currently in use and of interest to environmental researchers. Within the CompTox Dashboard, users can access chemical structures, experimental and predicted physicochemical and toxicity data, and additional links to relevant websites and applications. It maps curated physicochemical property data associated with chemical substances to their corresponding chemical structures</td>
+	
+    
+
+	
+                <td>Standard InChIs and Keys obtained from download page</td>
+	
+        </tr>
+  
+    <tr>
+    
+    
+    
+
+	
+		
+		
+		<td>33</td>
+	
+    
+
+	
+		
+		<td><a href=" https://www.ebi.ac.uk/unichem/legacy/ucquery/sourceDetails/33  "> lipidmaps </a></td>
+	
+    
+
+	
+                <td>LipidMaps</td>
+	
+    
+
+	
+                <td>LIPID Metabolites And Pathways Strategy (LIPID MAPS) is a multi-institutional effort created to identify and quantitate, using a systems biology approach and sophisticated mass spectrometers, all of the major, and many minor, lipid species in mammalian cells, as well as to quantitate the changes in these species in response to perturbation</td>
+	
+    
+
+	
+                <td>Standard InChIs and Keys obtained from download page</td>
+	
+        </tr>
+  
+    <tr>
+    
+    
+    
+
+	
+		
+		
+		<td>34</td>
+	
+    
+
+	
+		
+		<td><a href=" https://www.ebi.ac.uk/unichem/legacy/ucquery/sourceDetails/34  "> drugcentral </a></td>
+	
+    
+
+	
+                <td>DrugCentral</td>
+	
+    
+
+	
+                <td>DrugCentral is an online drug information resource created and maintained by Division of Translational Informatics at University of New Mexico, providing information on active ingredients chemical entities, pharmaceutical products, drug mode of action, indications, pharmacologic action</td>
+	
+    
+
+	
+                <td>Standard InChIs and Keys available as a download.</td>
+	
+        </tr>
+  
+    <tr>
+    
+    
+    
+
+	
+		
+		
+		<td>35</td>
+	
+    
+
+	
+		
+		<td><a href=" https://www.ebi.ac.uk/unichem/legacy/ucquery/sourceDetails/35  "> carotenoiddb </a></td>
+	
+    
+
+	
+                <td>Carotenoid Database</td>
+	
+    
+
+	
+                <td>A Database of information on naturally occurring carotenoids from many organisms, extracted  from the literature.</td>
+	
+    
+
+	
+                <td>Standard InChIs and Keys available as a download</td>
+	
+        </tr>
+  
+    <tr>
+    
+    
+    
+
+	
+		
+		
+		<td>36</td>
+	
+    
+
+	
+		
+		<td><a href=" https://www.ebi.ac.uk/unichem/legacy/ucquery/sourceDetails/36  "> metabolights </a></td>
+	
+    
+
+	
+                <td>Metabolights</td>
+	
+    
+
+	
+                <td>A database for Metabolomics experiments and derived information. The database is cross-species, cross-technique and covers metabolite structures and their reference spectra as well as their biological roles, locations and concentrations, and experimental data from metabolic experiments.</td>
+	
+    
+
+	
+                <td>Standard InChIs and Keys available from FTP site</td>
+	
+        </tr>
+  
+    <tr>
+    
+    
+    
+
+	
+		
+		
+		<td>37</td>
+	
+    
+
+	
+		
+		<td><a href=" https://www.ebi.ac.uk/unichem/legacy/ucquery/sourceDetails/37  "> brenda </a></td>
+	
+    
+
+	
+                <td>Brenda</td>
+	
+    
+
+	
+                <td>A comprehensive Enzyme Information system containing enzyme functional data extracted directly from the primary literature.</td>
+	
+    
+
+	
+                <td>Standard InChIKeys available as a download</td>
+	
+        </tr>
+  
+    <tr>
+    
+    
+    
+
+	
+		
+		
+		<td>38</td>
+	
+    
+
+	
+		
+		<td><a href=" https://www.ebi.ac.uk/unichem/legacy/ucquery/sourceDetails/38  "> rhea </a></td>
+	
+    
+
+	
+                <td>Rhea</td>
+	
+    
+
+	
+                <td>An expert curated resource of biochemical reactions designed for the annotation of enzymes and genome-scale metabolic networks and models</td>
+	
+    
+
+	
+                <td>src_compound_ids  extracted from ChEBI download file.</td>
+	
+        </tr>
+  
+    <tr>
+    
+    
+    
+
+	
+		
+		
+		<td>39</td>
+	
+    
+
+	
+		
+		<td><a href=" https://www.ebi.ac.uk/unichem/legacy/ucquery/sourceDetails/39  "> chemicalbook </a></td>
+	
+    
+
+	
+                <td>ChemicalBook</td>
+	
+    
+
+	
+                <td>An online knowledge-base of chemicals and a platform of the Chinese domestic vendors in chemical industry</td>
+	
+    
+
+	
+                <td>Standard InChIs and Keys provided by email.</td>
+	
+        </tr>
+  
+    <tr>
+    
+    
+    
+
+	
+		
+		
+		<td>40</td>
+	
+    
+
+	
+		
+		<td><a href=" https://www.ebi.ac.uk/unichem/legacy/ucquery/sourceDetails/40  "> dailymed_old </a></td>
+	
+    
+
+	
+                <td>DailyMed</td>
+	
+    
+
+	
+                <td>A database of marketed drugs in the USA, containing label and package insert information</td>
+	
+    
+
+	
+                <td>Standard InChIs and Keys generated from preferred term lookup in ChEMBL</td>
+	
+        </tr>
+  
+    <tr>
+    
+    
+    
+
+	
+		
+		
+		<td>41</td>
+	
+    
+
+	
+		
+		<td><a href=" https://www.ebi.ac.uk/unichem/legacy/ucquery/sourceDetails/41  "> swisslipids </a></td>
+	
+    
+
+	
+                <td>SwissLipids</td>
+	
+    
+
+	
+                <td>SwissLipids is an expert curated resource that provides a framework for the integration of lipid and lipidomic data with biological knowledge and models</td>
+	
+    
+
+	
+                <td>Download from https://www.swisslipids.org/api/index.php/downloadData</td>
+	
+        </tr>
+  
+    <tr>
+    
+    
+    
+
+	
+		
+		
+		<td>45</td>
+	
+    
+
+	
+		
+		<td><a href=" https://www.ebi.ac.uk/unichem/legacy/ucquery/sourceDetails/45  "> dailymed </a></td>
+	
+    
+
+	
+                <td>DailyMed</td>
+	
+    
+
+	
+                <td>A database of marketed drugs in the USA, containing label and package insert information</td>
+	
+    
+
+	
+                <td>Standard InChIs and Keys generated from preferred term lookup in ChEMBL</td>
+	
+        </tr>
+  
+    <tr>
+    
+    
+    
+
+	
+		
+		
+		<td>46</td>
+	
+    
+
+	
+		
+		<td><a href=" https://www.ebi.ac.uk/unichem/legacy/ucquery/sourceDetails/46  "> clinicaltrials </a></td>
+	
+    
+
+	
+                <td>clinicaltrials</td>
+	
+    
+
+	
+                <td>Intervention names from ClinicalTrials.gov. A database of privately and publicly funded clinical studies conducted around the world</td>
+	
+    
+
+	
+                <td>Manually downloaded and processed</td>
+	
+        </tr>
+  
+    <tr>
+    
+    
+    
+
+	
+		
+		
+		<td>47</td>
+	
+    
+
+	
+		
+		<td><a href=" https://www.ebi.ac.uk/unichem/legacy/ucquery/sourceDetails/47  "> rxnorm </a></td>
+	
+    
+
+	
+                <td>rxnorm</td>
+	
+    
+
+	
+                <td>RxNorm provides normalized names for clinical drugs and links its names to many of the drug vocabularies commonly used in pharmacy management and drug interaction software</td>
+	
+    
+
+	
+                <td>RxNorm Numerical ID</td>
+	
+        </tr>
+  
+    <tr>
+    
+    
+    
+
+	
+		
+		
+		<td>48</td>
+	
+    
+
+	
+		
+		<td><a href=" https://www.ebi.ac.uk/unichem/legacy/ucquery/sourceDetails/48  "> MedChemExpress </a></td>
+	
+    
+
+	
+                <td>MedChemExpress</td>
+	
+    
+
+	
+                <td>MedChemExpress is a chemical supplier that provides 15,000+ selective Inhibitors and Agonists.</td>
+	
+    
+
+	
+                <td>Standard InChIs and Keys provided by email</td>
+	
+        </tr>
+  
+    <tr>
+    
+    
+    
+
+	
+		
+		
+		<td>49</td>
+	
+    
+
+	
+		
+		<td><a href=" https://www.ebi.ac.uk/unichem/legacy/ucquery/sourceDetails/49  "> probes_and_drugs </a></td>
+	
+    
+
+	
+                <td>Probes And Drugs</td>
+	
+    
+
+	
+                <td>Data from the Probes and Drugs group at probes-drugs.org</td>
+	
+    
+
+	
+                <td>Inchis, keys and SMILES as Aux</td>
+	
+        </tr>
+  </tbody>
+</table>
+
+<br/><br/><br/>
+
+<script  type="text/javascript" language="javascript">
+// Local page script. Must include for DataTables to be properly formed.
+function makeI(){
+};
+</script>
+
+<h4>
+Back to <a href="https://www.ebi.ac.uk/unichem/legacy/">UniChem Home and Query page</a>
+</h4>
+
+
+<table style="width:100%">  
+<tr>
+<td width="120"></td>  
+<td>
+<div id="side2" style="height:90px;width:380px;background-color:white"> 
+
+      <a href="http://www.biomedbridges.eu" title="Go to BMB homepage"><img class="noBord" src="https://www.ebi.ac.uk/unichem/legacy/static/images/BMB_logo_compact_72dpi_100pc.png" width="100" height="80" alt="BMB"/></a> 
+
+     <a href="http://www.eu-openscreen.de" title="Go to EU-OPENSCREEN homepage"><img class="noBord" src="https://www.ebi.ac.uk/unichem/legacy/static/images/EU-OPENSCREEN-logo-with-slogan.jpg" width="240" height="80" alt="EU-OPENSCREEN"/></a> 
+
+</div> 
+</td>
+<td width="100"></td>  
+</tr>
+</table>
+
+		<!-- end contents here -->
+		<!-- InstanceEndEditable -->
+		<img src="https://www.ebi.ac.uk/inc/images/spacer.gif" class="spacer" alt="spacer" /></td><td class="rightmenucell" id="rightmenucell"><div class="rightmenu" id="rightmenu"><img src="https://www.ebi.ac.uk/inc/images/spacer.gif" class="spacer" alt="spacer" /></div></td></tr></table>
+
+		<table class="footerpane" id="footerpane" summary="The main footer pane of the page"><tr><td colspan ="4" class="footerrow">
+
+<!-- For 'new' EBI site... = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  -->
+<div class="footerdiv" id="footerdiv">
+ <div class="footer">
+   <!-- Optional local footer (insert citation / project-specific copyright / etc here -->
+   <!-- End optional local footer -->
+
+   <div id="global-footer" class="grid_24 clearfix">
+     <div class="nav" id="global-nav-expanded">
+       <div class="grid_4 alpha">
+         <h3 class="embl-ebi"><a href="/" title="Go to the EMBL-EBI homepage">EMBL-EBI</a></h3>
+       </div>
+       <div class="grid_4">
+         <h3 class="services"><a href="/services" title="Services">Services</a></h3>
+       </div>
+       <div class="grid_4">
+         <h3 class="research"><a href="/research" title="Research">Research</a></h3>
+       </div>
+       <div class="grid_4">
+         <h3 class="training"><a href="/training" title="Training">Training</a></h3>
+       </div>
+       <div class="grid_4">
+         <h3 class="industry"><a href="/industry" title="Industry">Industry</a></h3>
+       </div>
+       <div class="grid_4 omega">
+         <h3 class="about"><a href="/about" title="About us">About us</a></h3>
+       </div>
+     </div>
+
+     <div class="section" id="ebi-footer-meta">
+       <p class="address">EMBL-EBI, Wellcome Trust Genome Campus, Hinxton, Cambridgeshire, CB10 1SD, UK &nbsp; &nbsp; +44 (0)1223 49 44 44</p>
+       <p>Copyright &copy; EMBL-EBI 2012 | EBI is an Outstation of the <a href="http://www.embl.org">European Molecular Biology Laboratory</a> | <a href="/about/privacy" title="">Privacy</a> | <a href="/about/cookies" title="">Cookies</a> | <a href="/about/terms-of-use" title="">Terms of use</a></p>
+     </div>
+   </div>
+ </div>
+</div>
+<!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  -->
+
+
+</td></tr>
+
+		</table>
+	  <script  src="https://www.ebi.ac.uk/inc/js/footer.js" type="text/javascript"></script>
+	</div>
+</body>
+<!-- InstanceEnd --></html>
